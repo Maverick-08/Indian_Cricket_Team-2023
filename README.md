@@ -19,3 +19,6 @@ Install the Flask module by running the command : pip install flask.
 Upgrade pip by running the command : python.exe -m pip install --upgrade pip
 ### STEP 7 :
 Run pip list in the terminal to ensure that the Flask package is installed in the environment.
+### STEP 8 :
+Run the flask app : python <path to main.py><br />
+This will start your flask app, more specifically your backend server.
