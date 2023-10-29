@@ -1,5 +1,5 @@
 # Indian_Cricket_Team-2023
-This backend application is built using Flask web framework.It displays player statistics of Indian cricket squad for ICC World Cup-2023.
+This backend application is built using Flask web framework.It displays player's statistics of Indian cricket squad for ICC World Cup-2023.
 
 ## PROJECT SETUP 
 ### SETTING UP THE ENVIRONMENT
