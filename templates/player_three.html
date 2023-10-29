@@ -1,0 +1,75 @@
+{% extends "base.html"%}
+
+{% block Style %}
+<style>
+    .container::before{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        background: linear-gradient(235deg,#ff005e 0%,#010615 46%,#fbff00 100%);
+        z-index: -1;
+    }
+    .container::after{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        z-index: -2;
+        filter: blur(40px);
+        background: linear-gradient(235deg,#ff005e 0%,#010615 46%,#fbff00 100%);
+    }
+    .button::before{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(235deg,#ff005e 0%,#010615 46%,#fbff00 100%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+    .button:hover::after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        filter: blur(20px);
+        background: linear-gradient(235deg,#ff005e 0%,#010615 46%,#fbff00 100%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+</style>
+{% endblock %}
+
+{% block imgPath %}virat.jpg{% endblock %}
+
+{% block name %}
+3. Virat Kohli
+{% endblock %}
+
+{% block stats %}
+<p style="color: white;">
+<span style="font-size: 22px;color:gray">Matches : 287</span>&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Runs : 13437</span><br>
+<span style="font-size: 22px;color:gray">100s : 48</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Ranking : 6<sup>th</sup></span>
+</p>
+{% endblock %}
+
+{% block Script %}
+<script>
+    
+    function imgChanger(){
+        window.location.href = "/player_four"
+    }
+    
+</script>
+{% endblock%}

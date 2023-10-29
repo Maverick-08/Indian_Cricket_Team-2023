@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+
+{% block imgPath %}rohit.jpg{% endblock %}
+
+{% block name %}
+1. Rohit Sharma(C)
+{% endblock %}
+
+{% block stats %}
+<p style="color: white;">
+<span style="font-size: 22px;color:gray">Matches : 257</span>&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Runs : 10510</span><br>
+<span style="font-size: 22px;color:gray">100s : 31</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Ranking : 8<sup>th</sup></span>
+</p>
+{% endblock %}
+
+{% block Script %}
+<script>
+    function imgChanger(){
+        window.location.href = "/player_two"
+    }
+    
+</script>
+{% endblock%}

@@ -1,0 +1,75 @@
+{% extends "base.html"%}
+
+{% block Style %}
+<style>
+    .container::before{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        background: linear-gradient(235deg, #0396FF 0%, #7367F0 46%, #32CCBC 100%);
+        z-index: -1;
+    }
+    .container::after{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        z-index: -2;
+        filter: blur(40px);
+        background: linear-gradient(235deg, #0396FF 0%, #7367F0 46%, #32CCBC 100%);
+    }
+    .button::before{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(235deg, #0396FF 0%, #7367F0 46%, #32CCBC 100%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+    .button:hover::after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        filter: blur(20px);
+        background: linear-gradient(235deg, #0396FF 0%, #7367F0 46%, #32CCBC 100%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+</style>
+{% endblock %}
+
+{% block imgPath %}shami.jpg{% endblock %}
+
+{% block name %}
+9. Mohammed Shami
+{% endblock %}
+
+{% block stats %}
+<p style="color: white;">
+<span style="font-size: 22px;color:gray">Matches : 96</span>&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Wickets : 179</span><br>
+<span style="font-size: 22px;color:gray">Economy : 5.55</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Ranking : 22<sup>nd</sup></span>
+</p>
+{% endblock %}
+
+{% block Script %}
+<script>
+    
+    function imgChanger(){
+        window.location.href = "/player_ten"
+    }
+    
+</script>
+{% endblock%}

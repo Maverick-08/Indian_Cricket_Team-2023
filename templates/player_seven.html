@@ -1,0 +1,77 @@
+{% extends "base.html"%}
+
+{% block Style %}
+<style>
+    .container::before{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        background-image: linear-gradient(235deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+        z-index: -1;
+    }
+    .container::after{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        z-index: -2;
+        filter: blur(40px);
+        background-image: linear-gradient(235deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    }
+    .button::before{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        background-image: linear-gradient(235deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+    .button:hover::after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        filter: blur(20px);
+        background-image: linear-gradient(235deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+</style>
+{% endblock %}
+
+{% block imgPath %}jadeja.jpg{% endblock %}
+
+{% block name %}
+7. Ravindra Jadeja
+{% endblock %}
+
+{% block stats %}
+<p style="color: white;">
+<span style="font-size: 22px;color:gray">Matches : 192</span>&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Runs : 2683</span><br>
+<span style="font-size: 22px;color:gray">Wickets : 212</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Ranking : 26<sup>th</sup></span>
+</p>
+{% endblock %}
+
+{% block Script %}
+<script>
+    
+    function imgChanger(){
+        window.location.href = "/player_eight"
+    }
+    
+</script>
+{% endblock%}
+
+

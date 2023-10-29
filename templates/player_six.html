@@ -1,0 +1,77 @@
+{% extends "base.html"%}
+
+{% block Style %}
+<style>
+    .container::before{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        background: linear-gradient(235deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+        z-index: -1;
+    }
+    .container::after{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        z-index: -2;
+        filter: blur(40px);
+        background: linear-gradient(235deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    }
+    .button::before{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(235deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+    .button:hover::after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        filter: blur(20px);
+        background: linear-gradient(235deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+</style>
+{% endblock %}
+
+{% block imgPath %}suryakumar.jpg{% endblock %}
+
+{% block name %}
+6. Suryakumar Yadav
+{% endblock %}
+
+{% block stats %}
+<p style="color: white;">
+<span style="font-size: 22px;color:gray">Matches : 32</span>&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Runs : 718</span><br>
+<span style="font-size: 22px;color:gray">100s : 1</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Ranking : 129<sup>th</sup></span>
+</p>
+{% endblock %}
+
+{% block Script %}
+<script>
+    
+    function imgChanger(){
+        window.location.href = "/player_seven"
+    }
+    
+</script>
+{% endblock%}
+
+

@@ -1,0 +1,75 @@
+{% extends "base.html"%}
+
+{% block Style %}
+<style>
+    .container::before{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+        z-index: -1;
+    }
+    .container::after{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        z-index: -2;
+        filter: blur(40px);
+        background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+    }
+    .button::before{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+        border-radius: 16px;
+        z-index: -1;
+    }
+    .button:hover::after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        filter: blur(20px);
+        background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+        border-radius: 16px;
+        z-index: -1;
+    }
+</style>
+{% endblock %}
+
+{% block imgPath %}shubman.jpg{% endblock %}
+
+{% block name %}
+2. Shubman Gill
+{% endblock %}
+
+{% block stats %}
+<p style="color: white;">
+<span style="font-size: 22px;color:gray">Matches : 39</span>&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Runs : 2021</span><br>
+<span style="font-size: 22px;color:gray">100s : 6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 22px;color:gray">Ranking : 2<sup>nd</sup></span>
+</p>
+{% endblock %}
+
+{% block Script %}
+<script>
+    
+    function imgChanger(){
+        window.location.href = "/player_three"
+    }
+    
+</script>
+{% endblock%}
