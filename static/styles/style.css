@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Open+Sans:wght@500&family=Poppins:wght@200;400&family=Raleway&family=Rubik&display=swap');
+
+/* background: linear-gradient(235deg,#772aff,#010615,#2196F3); */
+/* background: linear-gradient(235deg,#ff005e,#010615,#fbff00); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    background: #010615;
+    min-height: 100vh;
+    
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+    z-index: -1;
+}
+.container{
+    position: relative;
+    height: 550px;
+    width: 450px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #060c21;
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -2;
+    filter: blur(40px);
+    background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+}
+
+#playerImage{
+    height: 350px;
+    width: 300px
+}
+
+
+.button::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+    border-radius: 16px;
+    z-index: -1;
+}
+.button{
+    padding: 16px 28px;
+    border-radius: 20px;
+    background: #010615;
+    color: gray;
+    font-size: 24px;
+    position: relative;
+}
+.button:hover{
+    color: white;
+    cursor: pointer;
+}
+.button:hover::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    right: -2px;
+    bottom: -2px;
+    filter: blur(20px);
+    background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+    border-radius: 16px;
+    z-index: -1;
+}
+.button a:hover{
+    color: white;
+}
